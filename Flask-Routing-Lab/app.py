@@ -9,6 +9,14 @@ app = Flask(  # Create a flask app
 
 # Your code should be below
 
+@app.route('/')
+def hello():
+    return render_template('home.html')
+
+#     @app.route('/hello')
+# def hello():
+#     return render_template('hello.html')
+
 
 
 
